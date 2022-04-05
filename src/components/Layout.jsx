@@ -19,7 +19,7 @@ export default function Layout({ children, title, description }) {
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
           integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"
