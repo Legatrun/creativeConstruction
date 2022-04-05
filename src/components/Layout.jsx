@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import styles from "../styles/Layout.module.css";
-
-
+import Footer from './Footer'
 import Navbar from "./Navbar";
 
 export default function Layout({ children, title, description }) {
@@ -21,13 +20,11 @@ export default function Layout({ children, title, description }) {
           integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
           crossOrigin="anonymous"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <Navbar />
       {children}
+      <Footer/>
+      
     </>
   );
 }
