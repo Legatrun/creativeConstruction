@@ -3,10 +3,12 @@ import Head from "next/head";
 import styles from "../styles/Layout.module.css";
 import Footer from './Footer'
 import Navbar from "./Navbar";
+import {SessionProvider} from 'next-auth/react'
+
 
 export default function Layout({ children, title, description }) {
   return (
-    <>
+    <SessionProvider>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>{title}</title>
@@ -21,11 +23,11 @@ export default function Layout({ children, title, description }) {
           crossOrigin="anonymous"
         />
       </Head>
-      <Navbar />
+      <Navbar/>
       {children}
       <Footer/>
       
-    </>
+    </SessionProvider>
   );
 }
 
